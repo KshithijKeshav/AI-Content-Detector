@@ -14,7 +14,7 @@ function InputBox({onSubmit}){
   return(
     <div className="input-box">
 
-        <textarea type="text" placeholder="Here goes nothing" value={input} onChange={handlechange}></textarea>
+        <textarea type="text" placeholder="Input text here" value={input} onChange={handlechange}></textarea>
         <button className="save"  onClick={handlesubmit}>Check</button>
       
     </div>
@@ -44,7 +44,11 @@ function App() {
       setResult("NO");
     }
   };
-  
+  const toBackend=async(input)=>{
+    const Response=await axios.post("http://127.0.0.1:5000/ML",{data:input});
+    console.log("Backends response",Response.data);
+    setResult(Response.data.val);
+  }
   return(<>
     
     <div className="Central-text">
@@ -53,7 +57,7 @@ function App() {
     <ToggleButton val={"YES"} isActive={Result === "YES"} />
     <ToggleButton val={"NO"} isActive={Result === "NO"} />
     </div>
-    <InputBox onSubmit={handleSubmit}/>
+    <InputBox onSubmit={toBackend}/>
     </div>
     </>
   )
