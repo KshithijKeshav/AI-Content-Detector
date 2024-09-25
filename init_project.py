@@ -5,8 +5,8 @@ import subprocess
 def setup_backend():
     print("Setting up Python virtual environment...")
     os.makedirs('backend', exist_ok=True)
-    subprocess.run(['python3', '-m', 'venv', 'backend/venv'])
-    subprocess.run(['backend/venv/bin/pip', 'install', '-r', 'backend/requirements.txt'])
+    subprocess.run(['python3', '-m', 'venv', 'backend'])
+    subprocess.run(['Backend/backend/bin/pip', 'install', '-r', 'Backend/requirements.txt'])
     print("Backend setup complete!")
 
 # Install Node modules for frontend
