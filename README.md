@@ -25,7 +25,7 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/yourusername/ai-content-detector.git
 cd ai-content-detector
-
+```
 
 ```bash
 ├── backend/                  # Flask API
@@ -38,3 +38,4 @@ cd ai-content-detector
 │   ├── App.js                # Main React App component
 │   ├── package.json          # Node.js dependencies
 ├── init_project.py           # Python script for initializing project
+```
