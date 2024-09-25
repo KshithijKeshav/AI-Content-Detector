@@ -27,6 +27,26 @@ git clone https://github.com/yourusername/ai-content-detector.git
 cd ai-content-detector
 ```
 
+### 2. Run the  Initialization script
+```python
+python3 init_project.py
+```
+### 3.Running the Project
+#### 4. Flask server
+```bash
+source backend/venv/bin/activate
+```
+Run Flask Server
+```bash
+cd backend
+python3 server.py
+```
+#### 5.Run React(Frontend)
+```bash
+cd frontend
+npm start
+```
+### Make sure your file directory looks like this
 ```bash
 ├── backend/                  # Flask API
 │   ├── venv/                 # Python virtual environment
