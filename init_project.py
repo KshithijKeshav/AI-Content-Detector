@@ -4,7 +4,6 @@ import subprocess
 # Create virtual environment and install Python dependencies
 def setup_backend():
     print("Setting up Python virtual environment...")
-    os.makedirs('backend', exist_ok=True)
     subprocess.run(['python3', '-m', 'venv', 'backend'])
     subprocess.run(['Backend/backend/bin/pip', 'install', '-r', 'Backend/requirements.txt'])
     print("Backend setup complete!")
