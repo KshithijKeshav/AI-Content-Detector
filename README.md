@@ -1,7 +1,5 @@
 # AI-Content-Detector
 
-# AI-Content Detector
-
 ## Project Overview
 
 The **AI-Content Detector** project aims to detect whether a given text is AI-generated or human-written. The project consists of a web-based interface that allows users to input text and checks the content's authenticity using a pre-trained machine learning model on the backend. The interface responds with a "YES" or "NO" based on the prediction.
@@ -27,3 +25,16 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/yourusername/ai-content-detector.git
 cd ai-content-detector
+
+
+```bash
+├── backend/                  # Flask API
+│   ├── venv/                 # Python virtual environment
+│   ├── server.py             # Main Flask server
+│   ├── requirements.txt      # Python dependencies
+├── frontend/                 # React frontend
+│   ├── node_modules/         # Installed Node modules
+│   ├── src/                  # React components
+│   ├── App.js                # Main React App component
+│   ├── package.json          # Node.js dependencies
+├── init_project.py           # Python script for initializing project
