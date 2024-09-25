@@ -34,7 +34,7 @@ python3 init_project.py
 ### 3.Running the Project
 #### 4. Flask server
 ```bash
-source backend/venv/bin/activate
+source Backend/backend/bin/activate
 ```
 Run Flask Server
 ```bash
