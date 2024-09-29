@@ -44,7 +44,7 @@ source Backend/backend/bin/activate
 ```
 **Windows**
 ```bash
-Backend/backend\Scripts\activate
+Backen\backend\Scripts\activate
 ```
 
 #### 4a. Run Flask Server
