@@ -28,18 +28,35 @@ cd ai-content-detector
 ```
 
 ### 2. Run the  Initialization script
+**Mac\Linux**
 ```python
 python3 init_project.py
 ```
+**Windows**
+```python
+python init_win_proj.py
+```
 ### 3.Running the Project
 #### 4. Flask server
+**Mac\Linux**
 ```bash
 source Backend/backend/bin/activate
 ```
+**Windows**
+```bash
+Backend/backend\Scripts\activate
+```
+
 Run Flask Server
+**Mac\Linux**
 ```bash
 cd backend
 python3 server.py
+```
+**Windows**
+```bash
+cd backend
+python server.py
 ```
 #### 5.Run React(Frontend)
 ```bash
